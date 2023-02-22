@@ -1,24 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AddressCandidateItemList from './components/AddressCandidateItemList/AddressCandidateItemList';
+
+
+const mockAddresses = [
+  {
+    id: 125739,
+    streetNumber: 115,
+    streetName: 'Fifth',
+    streetType: 'Street',
+    city: 'Santa Fe',
+    state: 'New Mexico',
+    zip: '87505',
+  },
+  {
+    id: 125738,
+    streetNumber: 116,
+    streetName: 'Fifth',
+    streetType: 'Street',
+    city: 'Santa Fe',
+    state: 'New Mexico',
+    zip: '87505',
+  },
+  {
+    id: 125737,
+    streetNumber: 117,
+    streetName: 'Fifth',
+    streetType: 'Street',
+    city: 'Santa Fe',
+    state: 'New Mexico',
+    zip: '87505',
+  }
+];
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <AddressCandidateItemList addresses={mockAddresses} />
     </div>
   );
 }
