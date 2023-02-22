@@ -11,9 +11,10 @@ const AddressCandidateItem = (props: AddressCandidateItemProps) => {
     const [isValidated, setIsValidated] = useState(false);
 
     const handleClick = () => {
+        //TODO: handle the logic of linking source and candidate address
         setIsValidated(prevState => !prevState);
     }
-    
+
     return (
         <div className='container'>
             <div className='row-container'>
